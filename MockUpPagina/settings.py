@@ -14,13 +14,6 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Aquí recolectaremos los archivos estáticos para producción
-
-# Añadir el directorio 'core/static' a STATICFILES_DIRS
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'core/static'),
-]
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
